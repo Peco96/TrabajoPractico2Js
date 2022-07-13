@@ -1,11 +1,11 @@
-//punto 7
+//Punto8
 let numero = parseInt(prompt("Ingresar un numero menor o igual que 50"));
 if(Number(numero) == numero){
 if (numero > 0 && numero <= 50) {
   let rep, i;
-  for (i = numero; i >= 1; i--) {
-    for (rep = i; rep >= 1; rep--) {
-      document.write(i);
+  for (i = 1; i <= numero ; i++) {
+    for (rep = 1; rep <= i; rep++) {
+      document.write(rep);
     }
     document.write("<br>");
   }
