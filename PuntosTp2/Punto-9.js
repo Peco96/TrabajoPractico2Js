@@ -1,18 +1,18 @@
 // Punto 9
-let numero = parseInt(prompt("Ingresar un numero menor o igual que 500"));
-if(Number(numero) == numero){
-if (numero > 0 && numero <= 500) {
-  let rep, i;
-  for (i = 1; i <= numero ; i++) {
-    for (rep = i; rep <= i; rep++) {
-      document.write(rep);
-    }
-    document.write("<br>");
+document.write("<hr>");
+let x;
+let y = 500;
+let rep = 0;
+for (x = 1; x <= y; x++) {
+  document.write(x);
+  if (x % 4 == 0) {
+    document.write(" (Multiplo de 4)");
   }
-  
-} else {
-  alert("el valor introducido es mayor que 50");
-}
-}else{
-    alert("No ingresaste un numero-")
+  if (x % 9 == 0) {
+    document.write(" (Multiplo de 9)");
+  }
+  document.write("<br>");
+  if (x % 5 == 0) {
+    document.write("<hr>");
+  }
 }
